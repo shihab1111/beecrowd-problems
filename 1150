@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{   int a,b,c=0,d=1,i;
+scanf("%d %d",&a,&b);
+while(a>=b){
+    scanf("%d",&b);
+
+}
+for(i=a;i<b;i++)
+{
+    c=c+i;
+    if(c>b)
+        break;
+    d++;
+}
+printf("%d\n",d);
+    return 0;
+}
