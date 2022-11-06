@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+
+
+    double a = 0.00;
+    int c, s,n;
+    scanf("%d", &n);
+  for(int i =1;i<=n;i++)
+    {
+        scanf("%d %d", &c, &s);
+       
+       
+
+        if(c==1001)
+            a=a+  s*1.50;
+        else if(c==1002)
+                 a=a+ s*2.50;
+        else if(c==1003)
+                 a=a+ s*3.50;
+        else if(c==1004)
+                 a=a+  s*4.50;
+        else if(c==1005)
+                 a=a+  s*5.50;
+    }
+    printf("%.2lf\n", a);
+    return 0;
+}
