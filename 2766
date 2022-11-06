@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    char s1[10][50];
+    int i;
+    for(i=0;i<10;i++){
+        gets(s1[i]);
+    }
+    puts(s1[2]);
+    
+     puts(s1[6]);
+      puts(s1[8]);
+  
+
+
+ return 0;
+}
