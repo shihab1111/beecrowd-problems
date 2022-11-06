@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+    int main(){
+int a[10],n,i,j,k,l;
+scanf("%d",&l);
+while(l--){
+
+scanf("%d",&n);
+k=pow(2,n);
+for(i=k,j=0;k>0;j++,i++)
+{
+a[j]=k%2;
+k=k/2;
+}
+
+for(j=j-1;j>=0;j--)
+{
+printf("%d",a[j]);
+}
+printf("\n");
+}
+return 0;
+    }
