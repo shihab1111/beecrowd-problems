@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    char a;
+    scanf("%c",&a);
+
+  int b=a;
+ b= b-64;
+ printf("%d\n",b);
+return 0;
+}
