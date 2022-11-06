@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int n,a,rcount=0,ccount=0,scount=0,total=0,i;
+     double pc,pr,ps;
+    char ch;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %c",&a,&ch);
+        if(ch=='C')
+        {
+           ccount=ccount+a;
+        }
+        if(ch=='R')
+        {
+            rcount=rcount+a;
+        }
+        if(ch=='S')
+        {
+            scount=scount+a;
+        }
+        total =total+a;
+    }
+
+    printf("Total: %d cobaias\n",total);
+    printf("Total de coelhos: %d\n",ccount);
+    printf("Total de ratos: %d\n",rcount);
+    printf("Total de sapos: %d\n",scount);
+
+    pc=((double)ccount/total)*100;
+
+    pr=((double)rcount/total)*100;
+
+    ps=((double)scount/total)*100;
+    printf("Percentual de coelhos: %.2lf %%\n",pc);
+  printf("Percentual de ratos: %.2lf %%\n",pr);
+  printf("Percentual de sapos: %.2lf %%\n",ps);
+
+
+    return 0;
+}
